@@ -16,9 +16,9 @@ export default {
     },
     mounted() {
         // On child-item rendered initiate badger-accordion
-        this.$on('item:ready', () => {
+        //this.$on('item:ready', () => {
             this.accordion = new BadgerAccordion(this.$refs.badger, (this.options || {}))
-        });
+        //});
     },
     methods: {
         init() { this.accordion.init() },
